@@ -60,3 +60,8 @@ if [[ -n "$SCRIPT_PATH" && -f "$SCRIPT_PATH" ]]; then
         rm -f "$SCRIPT_PATH"
     fi
 fi
+
+echo "Running chezmoi setup.sh"
+chezmoi cd
+chmod +x setup.sh
+./setup.sh
